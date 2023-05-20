@@ -1,0 +1,35 @@
+.weather-report-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .weather-report-container h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .weather-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .weather-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .weather-label {
+    font-weight: bold;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .weather-report-container {
+      max-width: 300px;
+    }
+  }
+  

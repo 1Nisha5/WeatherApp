@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #c8af8f;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-toggler {
+      display: none;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .navbar-nav .nav-link {
+      margin: 5px 0;
+    }
+  }
+  
