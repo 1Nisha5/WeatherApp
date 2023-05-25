@@ -1,12 +1,11 @@
 import React from 'react';
-import './WeatherReport.css'; // Import the CSS file
+import './WeatherReport.css'; 
 import { WiDaySunny, WiCloudy, WiRain, WiSnow } from 'react-icons/wi';
 
 const WeatherReport = ({ weatherData }) => {
   const { location, temperature, description } = weatherData;
 
   const getWeatherIcon = (description) => {
-    // Map the weather description to the corresponding weather icon
     switch (description.toLowerCase()) {
       case 'sunny':
         return <WiDaySunny />;

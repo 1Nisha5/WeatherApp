@@ -1,43 +1,10 @@
-// import React, { useState } from 'react';
-// import InputModes from './InputModes';
-// import WeatherReport from './WeatherReport';
-// import Navbar from './Navbar';
-// import './App.css'; // Import the CSS file
-
-// const App = () => {
-//   const [weatherData, setWeatherData] = useState(null);
-
-//   const handleSearch = (location, latitude, longitude) => {
-//     // Perform search logic based on the input values
-//     // You can call the weather API here and update the weatherData state
-//     // For simplicity, we'll just set some sample data
-//     const data = {
-//       location: location || 'New York',
-//       temperature: '20°C',
-//       description: 'Sunny',
-//     };
-//     setWeatherData(data);
-//   };
-
-//   return (
-//     <div className="app-container">
-//       <Navbar />
-//       <InputModes onSearch={handleSearch} />
-//       {weatherData && <WeatherReport weatherData={weatherData} />}
-//     </div>
-//   );
-// };
-
-// export default App;
-
-
 import React, { useState } from 'react';
 import InputModes from './InputModes';
 import WeatherReport from './WeatherReport';
 import Navbar from './Navbar';
 import './App.css';
 
-const API_KEY = 'bef9ab8d6a590c6352a148dcd995af0e'; // Replace with your Open Weather Map API key
+const API_KEY = 'bef9ab8d6a590c6352a148dcd995af0e'; 
 
 const App = () => {
   const [weatherData, setWeatherData] = useState(null);
